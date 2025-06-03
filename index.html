@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aseel Educational Center</title>
+  <style>
+    :root {
+      --bg-color: #121212;
+      --text-color: #ffffff;
+      --accent-color: #a61b32;
+      --program-bg: #1e1e1e;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg-color: #f4efe2;
+        --text-color: #2e2b1c;
+        --accent-color: #a61b32;
+        --program-bg: #ffffff;
+      }
+
+      h1, h2, h3 {
+        color: var(--accent-color);
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header, footer {
+      background: var(--accent-color);
+      padding: 1.5rem;
+      text-align: center;
+      color: white;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    .programs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .program {
+      flex: 1 1 300px;
+      border: 1px solid var(--accent-color);
+      padding: 1rem;
+      border-radius: 8px;
+      background: var(--program-bg);
+    }
+
+    .program ul {
+      padding-left: 1.2rem;
+    }
+
+    .program ul li {
+      list-style-type: disc;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aseel Educational Center</h1>
+    <p>Computer Science Department</p>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>About Us</h2>
+      <p>We help students grow in computer science. Our programs support beginners, university students, and job seekers with clear and practical courses.</p>
+    </section>
+
+    <section>
+      <h2>Vision</h2>
+      <p>To train future tech leaders in Afghanistan.</p>
+    </section>
+
+    <section>
+      <h2>Mission</h2>
+      <p>To offer simple, useful, and career-focused computer science education that helps students succeed in study and work.</p>
+    </section>
+
+    <section>
+      <h2>Our Programs</h2>
+      <div class="programs">
+        <div class="program">
+          <h3>Fundamentals Program</h3>
+          <ul>
+            <li>Fundamentals of Computer Science</li>
+            <li>Programming</li>
+            <li>Databases</li>
+            <li>Operating Systems</li>
+          </ul>
+        </div>
+        <div class="program">
+          <h3>Supplementary Program</h3>
+          <ul>
+            <li>Algorithms</li>
+            <li>Data Structures</li>
+            <li>Object-Oriented Programming (OOP)</li>
+            <li>Final Year Project Support</li>
+          </ul>
+        </div>
+        <div class="program">
+          <h3>Job Preparation Program</h3>
+          <ul>
+            <li>Front-End Developer</li>
+            <li>Back-End Developer</li>
+            <li>React Native Developer</li>
+            <li>Android/iOS Developer</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Incubation Center</h2>
+      <p>Work on your ideas with our support: free workspace, internet, mentorship, and access to investors.</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Aseel Educational Center | Kabul, Afghanistan</p>
+  </footer>
+</body>
+</html>
